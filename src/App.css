@@ -1,0 +1,173 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+} */
+
+.board-row {
+  width: 304px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+body {
+  background-color: #e9e9e9;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.App {
+  background-color: #fff;
+  width: 320px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #c23616;
+}
+
+.square {
+  background-color: #fff;
+  border: 2px solid #c23616;
+  color: #c23616;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 80px;
+  height: 80px; 
+  margin: 10px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  /* width: 100px;
+  height: 100px; */
+}
+
+
+.square:hover {
+  background-color: #c23616;
+  color: #fff;
+}
+
+.status {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #c23616;
+}
+
+.symbol-button {
+  background-color: transparent;
+  border: none;
+  color: #c23616;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.symbol-button:hover {
+  color: #fff;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popup-message {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.popup-button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.popup-button:hover {
+  background-color: #005ea3;
+}
